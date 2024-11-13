@@ -1,0 +1,68 @@
+:root{
+    --green: #10B981;
+    --background: #1f2937;
+    --text-h1: #FFF;
+    --text-p:#D5D4D8; 
+    --fs: 1rem;
+}
+
+
+
+span{
+    color: var(--green);
+}
+body{
+    background-color: black;
+    height: 100vh;
+    font-family: "Geist Mono", monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+h1{
+    color: var(--text-h1);
+}
+p{
+    color: var(--text-p);
+    margin-bottom: 40px;
+}
+hr{
+    margin-top: 60px;
+    margin-bottom: 40px;
+    border: 1px solid #2F3E53;
+    border-radius: 10px;    
+}
+.wrapper{
+    /* width: 550px;
+    height: 550px; */
+    background-color: var(--background);
+    padding: 40px;
+    border-radius: 2px;
+}
+button{
+    padding: 10px 20px;
+    background-color: var(--green);
+    color: var(--text-h1);
+    font-size: var(--fs);
+    border: hidden;
+    font-weight: 600;
+    border-radius: 5px;
+}
+button:hover {
+    background-color: #0d8b58;
+  }
+.password{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.password-box {
+    background-color: #273549;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: monospace;
+    font-size: 1.2em;
+    color: var(--green);
+    margin-bottom: 20px;
+  }
