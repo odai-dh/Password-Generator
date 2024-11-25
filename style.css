@@ -18,12 +18,12 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-
+    height: auto;
 }
 h1{
     color: var(--text-h1);
 }
-p{
+p, .p {
     color: var(--text-p);
     margin-bottom: 40px;
 }
@@ -65,4 +65,33 @@ button:hover {
     font-size: 1.2em;
     color: var(--green);
     margin-bottom: 20px;
-  }
+}
+
+.copied-message {
+    color: green;
+    font-size: 0.9rem;
+    margin-left: 10px;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+.label{
+    color: var(--text-p);
+
+}
+input[type="number"] {
+    width: 40px;
+    padding: 5px;
+    font-size: var(--fs);
+    background-color: var(--green);
+    color: var(--text-h1);
+    font-weight: 600;
+    margin: 10px 10px;
+    border: 1px solid var(--text-p);
+    border-radius: 5px;
+    text-align: center;
+}
+
+input[type="number"]:focus {
+    outline: none;
+    border-color: #20dfae;
+}

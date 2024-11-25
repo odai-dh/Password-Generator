@@ -12,12 +12,15 @@
 <body>
     <div class="wrapper">
         <h1>Generate a <br><span>random password</span> </h1>
-        <p>Nevver use an insecure password again</p>
+        <p>Never use an insecure password again</p>
+        <label for="password-length" class="label">Password Length:</label>
+        <input type="number" id="password-length" min="4" max="128" value="12" />
         <button id="btn" onclick="generatePasswords()">Generate password</button>
         <hr>
+        <p class="p">Click on Password to copy!</p>
         <div class="password">
-            <div class="password-box" id="password1"> *************** </div>
-            <div class="password-box" id="password2"> *************** </div>
+            <div id="password1" class="password-box" onclick="copyToClipboard('password1')">Generated Password 1</div>
+            <div id="password2" class="password-box" onclick="copyToClipboard('password2')">Generated Password 2</div>
         </div>
     </div>
 
